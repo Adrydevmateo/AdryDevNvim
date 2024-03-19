@@ -1,8 +1,9 @@
 return {
-  { 
-    'echasnovski/mini.completion', version = '*',
+  {
+    'echasnovski/mini.completion',
+    version = '*',
     config = function()
-      require('mini.completion').setup{}
+      require('mini.completion').setup {}
     end
   },
   {
@@ -14,7 +15,7 @@ return {
     },
     config = function()
       require("nvim-tree").setup {}
-    
+
       local g = vim.g
       local opt = vim.opt
       local map = vim.keymap.set
@@ -26,7 +27,7 @@ return {
       -- optionally enable 24-bit colour
       opt.termguicolors = true
 
-      map({'n'}, '<C-n>', ':NvimTreeToggle<ENTER>')
+      map({ 'n' }, '<C-n>', ':NvimTreeToggle<ENTER>')
     end,
   },
   {
@@ -44,7 +45,7 @@ return {
       require('telescope').setup {}
       local map = vim.keymap.set
       local bn = require('telescope.builtin')
-      
+
       map('n', '<C-p>', bn.find_files, {})
       map('n', '<leader>fg', bn.live_grep, {})
       map('n', '<leader>fb', bn.buffers, {})
@@ -52,24 +53,26 @@ return {
     end
   },
   { 'tpope/vim-surround' },
-  { 
-    'echasnovski/mini.comment', version = '*',
+  {
+    'echasnovski/mini.comment',
+    version = '*',
     config = function()
-      require('mini.comment').setup{}
+      require('mini.comment').setup {}
     end
   },
   {
-    'echasnovski/mini.pairs', version = '*',
+    'echasnovski/mini.pairs',
+    version = '*',
     event = "InsertEnter",
     config = function()
-      require('mini.pairs').setup{}
+      require('mini.pairs').setup {}
     end
   },
   {
-    'akinsho/toggleterm.nvim', 
-    version = "*", 
+    'akinsho/toggleterm.nvim',
+    version = "*",
     config = function()
-      require('toggleterm').setup{
+      require('toggleterm').setup {
         open_mapping = [[<C-\>]],
         direction = 'float',
       }
@@ -90,7 +93,7 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-      require('todo-comments').setup{}
+      require('todo-comments').setup {}
     end
   },
   {
@@ -98,7 +101,7 @@ return {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require('trouble').setup{}
+      require('trouble').setup {}
     end
   }
 }
