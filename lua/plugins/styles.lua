@@ -7,16 +7,18 @@ return {
     end
   },
   {
-    "catppuccin/nvim", name = "catppuccin", priority = 1000,
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
     config = function()
       local cmd = vim.cmd
-      cmd[[colorscheme catppuccin-mocha]]
+      cmd [[colorscheme catppuccin-mocha]]
     end
   },
   {
     'norcalli/nvim-colorizer.lua',
     config = function()
-      require('colorizer').setup{}
+      require('colorizer').setup {}
     end
   },
   {
@@ -35,13 +37,14 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
-      require('lualine').setup{}
+      require('lualine').setup {}
     end
   },
-  { 
-    'echasnovski/mini.indentscope', version = '*',
+  {
+    'echasnovski/mini.indentscope',
+    version = '*',
     config = function()
-      require('mini.indentscope').setup{}
+      require('mini.indentscope').setup {}
     end
   },
 }
