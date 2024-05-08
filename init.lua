@@ -1,3 +1,3 @@
 require('settings')
 require('keymaps')
-require('vim-plug')
+require('main')
