@@ -13,10 +13,10 @@ opt.relativenumber = true
 opt.expandtab = true
 
 -- Size of indent created by commands
-opt.shiftwidth = 2
+opt.shiftwidth = 1
 
 -- Width of a tab character
-opt.tabstop = 2
+opt.tabstop = 1
 
 -- Case-insensitive searching UNLESS \C or capital in search
 opt.ignorecase = true
@@ -27,10 +27,10 @@ opt.list = true
 opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Show which line your cursor is on
-opt.cursorline = true
+-- opt.cursorline = true
 
 -- Minimal numbor of lines to keep above and below the cursor
-opt.scrolloff = 10
+-- opt.scrolloff = 10
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 opt.hlsearch = true
