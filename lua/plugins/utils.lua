@@ -1,5 +1,14 @@
 return {
  {
+  'rebelot/kanagawa.nvim',
+  name = 'kanagawa',
+  priority = 1000,
+  config = function()
+   local cmd = vim.cmd
+   cmd [[colorscheme kanagawa]]
+  end
+ },
+ {
   "nvim-tree/nvim-tree.lua",
   version = "*",
   lazy = false,
@@ -28,6 +37,10 @@ return {
   config = function()
    require('nvim-treesitter.configs').setup {
     ensure_installed = { 'html', 'css', 'javascript' },
+    highlight = {
+     enable = true,
+     additional_vim_regex_highlighting = false,
+    },
    }
   end
  },
