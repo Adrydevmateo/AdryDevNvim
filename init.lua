@@ -1,3 +1,3 @@
-require('settings')
-require('keymaps')
-require('main')
+require("settings")
+require("keymaps")
+require("main")
