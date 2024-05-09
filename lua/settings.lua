@@ -24,8 +24,7 @@ opt.smartcase = true
 
 -- Sets how hidden characters are displayed in the current buffer
 opt.list = true
--- opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-opt.listchars = { trail = '·', nbsp = '␣' }
+opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Show which line your cursor is on
 -- opt.cursorline = true
