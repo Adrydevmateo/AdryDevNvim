@@ -4,7 +4,9 @@ local map = vim.keymap.set
 vim.api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true })
 
 -- Save current buffer on Ctrl + s
-map({ "n", "i" }, "<C-s>", "<cmd>lua vim.lsp.buf.format({ wait = true }) vim.cmd('w')<CR>", { noremap = true })
+map({ "i" }, "<C-s>", "<C-o>:w<ENTER>", { noremap = true })
+map({ "n" }, "<C-s>", ":w<ENTER>", { noremap = true })
+-- map({ "n", "i" }, "<C-s>", "<cmd>lua vim.lsp.buf.format({ wait = true }) vim.cmd('w')<CR>", { noremap = true })
 
 -- Disable arrow keys in normal mode
 map("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')

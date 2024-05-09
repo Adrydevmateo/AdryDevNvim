@@ -9,7 +9,10 @@ local masonOpts = {
 }
 
 local masonLspOpts = {
-	ensure_installed = { "lua_ls", "emmet_language_server" },
+	ensure_installed = {
+		"lua_ls",
+		"emmet_language_server",
+	},
 }
 
 return {
