@@ -1,3 +1,4 @@
 [ ] - Add support for fyles: html, css, js, ts, jsx, tsx
-[ ] - Add autocompletion
-[ ] - Add snippets
+[x] - Add autocompletion
+[x] - Add snippets
+[ ] - Setup formatting: https://github.com/MunifTanjim/prettier.nvim
