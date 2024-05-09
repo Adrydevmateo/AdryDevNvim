@@ -1,8 +1,7 @@
 local map = vim.keymap.set
-local g = vim.g
 
 -- Set spacebar as leader
-g.mapleader = ' '
+vim.api.nvim_set_keymap('', '<Space>', '<Nop>', { noremap = true })
 
 -- Save current buffer on Ctrl + s
 map({ "i" }, "<C-s>", "<C-o>:w<ENTER>")

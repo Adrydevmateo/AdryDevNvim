@@ -29,7 +29,8 @@ return {
    -- optionally enable 24-bit colour
    opt.termguicolors = true
 
-   map({ 'n' }, '<C-n>', ':NvimTreeToggle<ENTER>')
+   vim.api.nvim_set_keymap('n', '<C-n>', '<cmd>NvimTreeToggle<cr>', { noremap = true })
+   vim.api.nvim_set_keymap('i', '<C-n>', '<cmd>NvimTreeToggle<cr>', { noremap = true })
   end,
  },
  {
