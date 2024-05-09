@@ -2,6 +2,7 @@ return {
  'neovim/nvim-lspconfig',
  config = function()
   require('lspconfig')
+  -- local lspconf = require('lspconfig')
   local map = vim.keymap.set
 
   map('n', '<leader>e', vim.diagnostic.open_float)
@@ -23,5 +24,9 @@ return {
     end, opts)
    end
   })
+
+  -- lspconf.technology.setup {
+  --  capabilities = capabilities
+  -- }
  end
 }
