@@ -100,4 +100,8 @@ return {
 			})
 		end,
 	},
+	{
+		"HerringtonDarkholme/yats.vim",
+		"maxmellon/vim-jsx-pretty",
+	},
 }
