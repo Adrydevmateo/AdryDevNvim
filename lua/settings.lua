@@ -35,3 +35,6 @@ opt.smartcase = true
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 opt.hlsearch = true
 map("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+-- JSX = Support highlighting the close tag separately from the open tag
+-- vim.g.vim_jsx_pretty_highlight_close_tag = 1
