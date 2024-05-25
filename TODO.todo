@@ -2,3 +2,4 @@
 [x] - Add autocompletion
 [x] - Add snippets
 [x] - Setup formatting: https://github.com/MunifTanjim/prettier.nvim
+[x] - Added js lsp
